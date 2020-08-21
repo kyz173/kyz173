@@ -1,0 +1,11 @@
+f1 = open("TestDebug20.yuv", 'r')
+data = f1.read(1280*720)
+f2 = open("TestDebug21.yuv", 'r')
+data2 = f2.read(1280*720/2)
+f3 = open("Convolutuion.yuv", 'w')
+f3.write(data)
+f3.write(data2)
+
+f1.close()
+f2.close()
+f3.close()
